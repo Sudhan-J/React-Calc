@@ -1,2 +1,3 @@
 # React-Calc
-First react app
+
+First basic react app

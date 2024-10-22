@@ -1,0 +1,52 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap'); */
+
+
+body {  
+  background-color: #110f0f;
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  align-items: center;
+  justify-content: center; 
+}
+
+.calculator-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 4px;
+  background-color: #999;
+} 
+
+.calculator-grid button {
+  font-size: 25px;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-family: 'DM Mono', monospace;
+} 
+
+textarea {
+grid-column: span 4;
+font-family: 'DM Mono', monospace;
+font-size: 25px;
+text-align: end;
+background-color: #fad3cb;
+padding: 15px;
+border: none;
+}
+
+.calculator-grid button:nth-child(n+18) {
+  background-color: tomato; 
+}
+
+
+button:hover,
+.calculator-grid button:nth-child(n+18):hover {
+  background-color: #440b15;
+  color: white;
+  transition: 0.2s;
+}
