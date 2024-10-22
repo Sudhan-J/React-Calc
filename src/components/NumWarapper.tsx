@@ -34,8 +34,13 @@ const NumWrap = () => {
   };
 
   function result(number: any) {
-    let ans = math.evaluate(number);
-    setTextAreaValue(ans);
+    let ans = 0;
+    try {
+      ans = math.evaluate(number);
+      setTextAreaValue(ans.toString());
+    } catch (error) {
+      setTextAreaValue("Math Error");
+    }
   }
 
   function clear() {
