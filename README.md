@@ -4,4 +4,4 @@ First basic react app
 
 ## Sample Screenshots
 
-![Screenshot](/calculator-app/Sample_Images/SampleImage.png)
+![Screenshot](./Sample_Images/SampleImage.png)
